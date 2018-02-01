@@ -1,0 +1,47 @@
+{
+  "name": "zabbix2",
+  "description": "Installs/Configures Zabbix Agent/Server",
+  "long_description": "Zabbix2 Cookbook\n==================\nThis cookbook install zabbix-agent and zabbix-server.\n\nBy default the cookbook installs zabbix-agent, if you would like to install zabbix-server you should add zabbix2::server to your run_list\n\nDefault login password for zabbix frontend is admin / zabbix CHANGE IT !\n\nAttributes\n----------\n\n#### zabbix2::default\n\n| Key                      | Type   | Description               | Default   |\n|--------------------------|--------|---------------------------|-----------|\n| ['zabbix']['server_ip'] | String | Set the Server IP Address | 127.0.0.1 |\n\nUsage\n-----\nPlease include the default recipe before using any other recipe.\n\nInstalling the Agent:\n\n~~~json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[zabbix2]\"\n  ]\n}\n~~~\n\nInstalling the Server:\n\n~~~json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[zabbix2]\",\n    \"recipe[zabbix2::server]\"\n  ]\n}\n~~~\n\nContributing\n------------\n\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write your changes\n4. Write tests for your changes (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\n- Author:: Adam Balali (adamba@johnbox.net)\n",
+  "maintainer": "Adam Balali",
+  "maintainer_email": "adamba@johnbox.net",
+  "license": "All rights reserved",
+  "platforms": {
+    "ubuntu": ">= 0.0.0",
+    "suse": ">= 0.0.0",
+    "redhat": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "windows": ">= 0.0.0"
+  },
+  "dependencies": {
+    "database": "= 2.3.1",
+    "mysql": ">= 0.0.0",
+    "windows": "= 1.34.8"
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.2",
+  "source_url": "https://github.com/AdamBalali/zabbix2",
+  "issues_url": ""
+}
